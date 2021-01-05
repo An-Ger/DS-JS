@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // alert('hello')
+        var hello = "fuck"
+        // alert(hello)
+        document.write('hello')
+        var ste2 = "123"
+        var ste3 = 123
+        console.log(typeof(ste2));
+        console.log(typeof(ste3));
+        document.write("?",'\n',Number.MAX_VALUE)
+        console.log(ste3.toString());
+        console.log(typeof(ste3.toString()));
+        ste3 = Number(ste3)
+        console.log(ste3);
+        console.log(Number(true));
+        console.log(Number(false));
+        var s = '12312s43214px';
+        a = parseInt(s);//取出一个字符串中的有效整数
+        console.log(a);
+        const n = NaN;
+        console.log(Boolean(n));//null undefined 0 NaN " "->false
+        console.log(2 + NaN);//任何值和NaN运算都得NaN
+        //任何值和字符串相加都会转换为字符串
+        //可以利用任何值添加一个空串做拼串操作，将任何一个类型转换为String类型
+         //隐式类型转换，由浏览器自动完成
+         c = null;
+         console.log(typeof(c));
+         c = c + " ";
+         console.log(typeof(c));
+        var res = 1 + 2 + '3';
+        console.log(res);//字符串拼接
+        var res2 = '1' + 2 + 3;
+        console.log(res2);
+        var res3 = 100 - '1';
+        console.log(res3);
+        var res4 = '1' - 100;
+        console.log(res4);//字符串加法会转换为字符串，其余的都转换为Number
+        var res5 = '123'
+        res5 = res5 - 0;
+        console.log(res5);
+        console.log(typeof(res5));//运用-0 *0 /0把类型转换为Number，但是不能+0
+        //可以对一个对象使用一个单独的+，将其转换为Number类型
+        var res6 = "123"
+        console.log(typeof(res6));
+        console.log(typeof(+res6));
+        var res7 = 1+ + '2' + 3;
+        console.log(res7);
+    </script>
+    <a href="https://sm.ms/image/EFSPVynjipo8wTl" target="_blank"><img src="https://i.loli.net/2021/01/05/EFSPVynjipo8wTl.jpg" alt="2e9vk9.jpg"></a>
+</body>
+</html>
