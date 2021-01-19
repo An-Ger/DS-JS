@@ -1,2 +1,2 @@
-# DS-JS
+# JavaScript
 Js基础
