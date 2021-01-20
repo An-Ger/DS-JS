@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="count">1</h1>
+    <script>
+      window.onload = function () {
+          var c = document.getElementById('count');
+            var num = 0;
+            var timer = setInterval(function () {
+                c.innerHTML = ++num;
+                if(num == 3) clearInterval(timer);
+            }, 1000)//定时器返回一个number类型的数据,这个数字可以用来区分定时器，是定时器的唯一标识
+            setTimeout(function(){
+                alert('?')
+            },4000)
+      };
+    </script>
+  </body>
+</html>
